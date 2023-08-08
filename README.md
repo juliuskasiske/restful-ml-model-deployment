@@ -22,7 +22,7 @@ All modeling functionality is wrapped by a Flask app. In Flask, I defined the re
 
 Docker then containerizes the application and enables deployment. Note that the service will run on your local machine. I refrained from deploying it on external cloud instances.
 
-<img src="./example.jpg" alt="Architecture">
+<img src="./architecture.jpg" alt="Architecture">
 
 
 
