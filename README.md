@@ -9,6 +9,8 @@ In order to demonstrate pythonic and RESTful machine learning model deployment, 
 ### 2.1 Model accuracy
 The focus of this project was to demonstrate containerized model deployment, not optimized model training. As such, I performed minimal preprocessing. Also, in order to save work, I chose to omit feature scaling and opted for a model that is insensitive to value ranges. The R2-score of the regressor on validation data will range between 0.1 and 0.3. Hence, please refrain from considering model predictions as reliable.
 
+For a detailed machine learning pipeline for a multitude of models, feel free to check out my repository on [predicting hotel cancellations]("https://github.com/juliuskasiske/predicting-hotel-cancellations/blob/main/Predicting%20Hotel%20Cancellations.pdf")
+
 ### 2.2 Data quality
 While all weather data is accurate, I mocked any order data from Best Bite in order to not publicly disclose internal financial information. As such, please do not consider data to be accurate.
 
