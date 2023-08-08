@@ -51,8 +51,8 @@ class BestBiteModel:
         except Exception:
             return False
         
-    def predict_single(self, weekday,	day, avgTemp, lowTemp, highTemp, 
-                       precipitation,	windSpeed, sunMinutes, month):
+    def predict_single(self, weekday, day, avgTemp, lowTemp, highTemp, 
+                       precipitation, windSpeed, sunMinutes, month):
         values = [weekday, day, avgTemp, lowTemp, highTemp, precipitation, windSpeed, sunMinutes, month]
         data_raw = self.__data
         # define data frame

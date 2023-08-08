@@ -18,9 +18,9 @@ Feel free to test the system! To do so, all you have to do is to run the reposit
 ## 4. Project architecture
 For importing and transforming data, I used ```Pandas```, I instantiated and trained the Decision Tree Regressor using ```sklearn```. After defining the class and methods that will preprocess the data, train the model and make the predictions, the model will be instantiated and trained whenever the container is started. 
 
-All modeling functionality is wrapped by a Flask app. In Flask, I defined the requests the server handles and how the client-side passes values for which to predict. Flask exposes the app on the container port 5000, which is forwarded to host port 5000 in the docker-run command. 
+All modeling functionality is wrapped by a ```Flask``` app. In Flask, I defined the requests the server handles and how the client-side passes values for which to predict. Flask exposes the app on the container port 5000, which is forwarded to host port 5000 in the docker-run command. 
 
-Docker then containerizes the application and enables deployment. Note that the service will run on your local machine. I refrained from deploying it on external cloud instances.
+```Docker``` then containerizes the application and enables deployment. Note that the service will run on your local machine. I refrained from deploying it on external cloud instances.
 
 <img src="./architecture.png" alt="Architecture">
 
