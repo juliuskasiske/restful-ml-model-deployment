@@ -6,7 +6,7 @@ from sklearn.metrics import r2_score
 
 class BestBiteModel:
     __data = None
-
+    
     def __init__(self) -> None:
         # model self-initializes best bite data
         self.__data = pd.read_csv("alldata.csv", index_col=0)
