@@ -13,7 +13,9 @@ The focus of this project was to demonstrate containerized model deployment, not
 While all weather data is accurate, I mocked any order data from Best Bite in order to not publicly disclose internal financial information. As such, please do not consider data to be accurate.
 
 ## 3. Running the server on your own
-Feel free to test the system! To do so, all you have to do is to run the repositories ```build.bat``` file, if you are on Windows, and the ```build.sh``` file if you are on macOS or Linux. Then, call your localhost on port 5000.
+Feel free to test the system! To do so, all you have to do is to run the repositories ```build.bat``` file, if you are on Windows, and the ```build.sh``` file if you are on macOS or Linux. Then, call your localhost on port 5000. Sending get requests can then be done manually through your browser. In order for the model to respond with the prediction, you need to enter your input values as path parameters. The path parameters have the following structure:
+
+```localhost:5000/<avgTemp>-<highTemp>-<lowTemp>-<precipitation>-<windSpeed>-<sunMinutes>```
 
 ## 4. Project architecture
 For importing and transforming data, I used ```Pandas```, I instantiated and trained the Decision Tree Regressor using ```sklearn```. After defining the class and methods that will preprocess the data, train the model and make the predictions, the model will be instantiated and trained whenever the container is started. 
