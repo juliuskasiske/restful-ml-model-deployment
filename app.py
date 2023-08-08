@@ -13,8 +13,8 @@ def fill_values():
 @app.route("/<avgTemp>-<highTemp>-<lowTemp>-<precipitation>-<windSpeed>-<sunMinutes>")
 def homepage(avgTemp, highTemp, lowTemp, precipitation, windSpeed, sunMinutes):
     weekday, day, month = fill_values()
-    prediction = model.predict_single(weekday, day, avgTemp, lowTemp, highTemp, precipitation, windSpeed, sunMinutes)
-    return_day = day[:4] + "." + day[4:6] + "." + day[6:]
+    prediction = model.predict_single(weekday, day, avgTemp, lowTemp, highTemp, precipitation, windSpeed, sunMinutes, month)
+    return_day = str(day)[:4] + "." + str(day)[4:6] + "." + str(day)[6:]
     return f"Expected gross profit for Best Bite on {return_day} will be: {prediction}"
 
 if (__name__) == "__main__":
