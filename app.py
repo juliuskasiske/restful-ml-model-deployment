@@ -1,10 +1,10 @@
-from flask import flask
+from flask import Flask
 
-app = flask(__name__)
+app = Flask(__name__)
 
-@app.route("/")
-def homepage():
-    pass
+@app.route("/<var>")
+def homepage(var):
+    return f"hello {var}, good to see you"
 
 if (__name__) == "__main__":
-    app.run()
+    app.run(host="0.0.0.0")
